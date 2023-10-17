@@ -1,0 +1,181 @@
+<!Doctype html>
+<html>
+<title>Demo on menus</title>
+<head>
+</head>
+<style>
+ul{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+background-color:#333;
+}
+li{
+float:left;
+}
+li a{
+display:block;
+color:white;
+text-align:centre;
+padding:14px 16px;
+text-decoration:none;
+}
+li.dropdown{
+display:inline-block;
+}
+.dropdown-content{
+display:none;
+position:absolute;
+background-color:#f9f9f9;
+min-width:160px;
+box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index:1;
+}
+.dropdown-content a{
+color:black;
+padding:12px 16px;
+text-decoration:none;
+display:block;
+text-align:left;
+}
+.dropdown-content a:hover{
+background-color:#f1f1f1;
+}
+.dropdown:hover .dropdown-content{
+display:block;
+}
+li a:hover{
+background-color:#111;
+}
+li a:hover, .dropdown:hover .dropbtn{
+background-color:black;
+}
+fieldset{
+background-color:black;
+}
+.button{
+	background-color:blue;
+	color:white;
+	}
+label{
+        margin-right: 40px;
+    }
+.icon i {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 25px;
+  text-align: right;
+  margin-right: 10px;
+  padding-top: 15%;
+}
+.image {
+ display: grid;
+ align-items: center; 
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 5px;
+}
+
+.image1 {
+  max-width: 100%;
+  max-height:100%;
+}
+
+.text {
+  font-size: 15px;
+}
+</style>
+<body><fieldset>
+<div class="image">
+<div class="image1">
+<img src="SRU.png" alt="SRU" width="400" height="150" ></div>
+<div class="text"><center><h1 style="color:yellow;">Academic & Administration Portal</h1></center></div></div>
+<ul>
+<li><a href="#Home">Home</a></li>
+<li class="dropdown">
+<a href="#" class="dropbtn">Academic details</a>
+<div class="dropdown-content">
+<a href="#View Academic Regulations">View Academic Regulations</a>
+<a href="#View Academic Calender">View Academic Calender</a>
+<a href="#View Syllabus">View Syllabus</a>
+<a href="#View Master TT">View Master TT</a>
+<a href="#List of Holidays|Working days">List of Holidays|Working days</a>
+<a href="#View Circular">View Circular</a>
+</div>
+</li>
+<li class="dropdown">
+<a href="#" class="dropbtn">Profile</a>
+<div class="dropdown-content">
+<a href="#View Profile">View Profile</a>
+<a href="#Update Profile">Update Profile</a>
+<a href="#Upload Adhar">Upload Adhar</a>
+<a href="#Upload Signature">Upload Signature</a>
+<a href="#Exit">Exit</a>
+<a href="#Exit Survey">Exit survey</a>
+</div>
+</li>
+<li class="dropdown">
+<a href="#" class="dropbtn">Courses Registration</a>
+<div class="dropdown-content">
+<a href="#Register">Register</a>
+<a href="#View CS Status">View CS Status</a>
+</div>
+</li>
+<li class="dropdown">
+<a href="#" class="dropbtn">Attendence</a>
+<div class="dropdown-content">
+<a href="#Day wise report">Day wise report</a>
+<a href="#Month wise report">Month wise report</a>
+<a href="#Subject wise report">Subject wise report</a>
+</div>
+</li>
+<li><a href="#Fee payment">Fee payment</a></li>
+<li class="dropdown">
+<a href="#" class="dropbtn">Internals</a>
+<div class="dropdown-content">
+<a href="#View Internal Mark(T&P)">View Internal Mark(T&P)</a>
+</div>
+</li>
+<li class="dropdown">
+<a href="#" class="dropbtn">Feedback</a>
+<div class="dropdown-content">
+<a href="#Submit Feedback">Submit Feedback</a>
+</div>
+</li>
+<li class="dropdown">
+<a href="#" class="dropbtn">Grievance</a>
+<div class="dropdown-content">
+<a href="#Submit Grievance">Submit Grievance</a>
+<a href="#Grievance Status">Grievance Status</a>
+</div>
+</li>
+<li><a href="#Change Password">Change Password</a></li>
+</ul>
+<p style="color:yellow; text-align:right;">Welcome to SYED NAWAZ PASHA Logout
+<a href="#"><i class="icon" style="background: red;"> <img src="sir.png"  style="width:50px;height:45px;"></i></a>
+</fieldset>
+<center><h1>Student Attendence Entry</h1>
+<form>
+<label for="class&course"><b>Class & Course:</b></label>
+<input type="text" id="class&course" name="class&course" style="width:20%; height:20px; text-align:right;">
+<div style = "position:absolute; right:80px;">
+<label for="bacth"><b>Batch(for Electives):</b></label>
+<select id="-select batch-" name="-select batch-" style="width:20%; height:20px;">
+<option value="--select batch--">--select batch--</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+  </select>
+</div><br><br>
+<p style="color:red; text-align:right;"><b>(Batch 1 or 2..Selection only for labs)</b></p>
+<p style="color:blue; text-align:right;"><b>(Select E1 or E2...for subject batches)</b></p>
+<label for="dateofentry"><b>Date of entry:</b></label>
+<input type="text" id="dateofentry" name="dateofentry" style="width:20%; height:20px; text-align:right;">
+<button type="submit" class="button">Submit</button>    
+</form>
+<p style="background-color:darkblue; color:white; height:50px;">@Center for Software Development and Digital Learning,SR University.</p>
+</center>
+</body>
+</html>
